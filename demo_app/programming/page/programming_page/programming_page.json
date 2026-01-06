@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2026-01-01 16:56:49.915391",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2026-01-01 16:56:49.915391",
+ "modified_by": "Administrator",
+ "module": "programming",
+ "name": "programming-page",
+ "owner": "Administrator",
+ "page_name": "programming-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Demo Page"
+}

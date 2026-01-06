@@ -149,15 +149,21 @@ app_license = "mit"
 # ---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"demo_app.tasks.all"
-# 	],
+#     "cron": {
+#         "* * * * *":[
+#             "demo_app.tasks.cron"
+#         ]
+#     },
+
+	# "all": [
+	# 	"demo_app.tasks.cron"
+	# ],
 # 	"daily": [
 # 		"demo_app.tasks.daily"
 # 	],
-# 	"hourly": [
-# 		"demo_app.tasks.hourly"
-# 	],
+	# "hourly": [
+	# 	"demo_app.tasks.cron"
+	# ],
 # 	"weekly": [
 # 		"demo_app.tasks.weekly"
 # 	],
@@ -242,3 +248,4 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures=["Library Member",]
