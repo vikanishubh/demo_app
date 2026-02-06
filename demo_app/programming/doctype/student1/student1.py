@@ -4,6 +4,7 @@ import frappe
 from frappe.model.document import Document
 
 class Student1(Document):
+	pass
 	def validate(self):
 		self.percentage_calculation()
 	def percentage_calculation(self):
@@ -15,4 +16,5 @@ class Student1(Document):
 			max_total=max_total+row.max_marks
 
 			if max_total>0:
-				self.percentage=(total/max_total)*100	
+				self.percentage=(total/max_total)*10
+

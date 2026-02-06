@@ -3,8 +3,8 @@ import string
 import random
 
 
-def all():
-    pass
+# def all():
+#     pass
 
 def cron():
     letters = string.ascii_letters
@@ -13,3 +13,20 @@ def cron():
 
     new_note.insert(ignore_permissions=True)
     frappe.db.commit()
+
+
+def all():
+    frappe.log_error("Scheduler 'all' executed", "Scheduler Test")
+
+def daily():
+    frappe.log_error("Daily task executed", "Scheduler Test")
+
+def hourly():
+    frappe.log_error("Hourly task executed", "Scheduler Test")
+
+def weekly():
+    frappe.log_error("Weekly task executed", "Scheduler Test")
+
+def monthly():
+    frappe.log_error("Monthly task executed", "Scheduler Test")
+

@@ -1,0 +1,29 @@
+{
+ "add_total_row": 1,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2026-01-22 23:56:35.052362",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2026-01-23 00:06:06.527778",
+ "modified_by": "Administrator",
+ "module": "programming",
+ "name": "query_student",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT name1,class,percentage FROM `tabStudent1` where name1=\"raj\";\r\n\r\n",
+ "ref_doctype": "Student1",
+ "report_name": "query_student",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

@@ -6,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
+  "section_break_zjwl",
   "table"
  ],
  "fields": [
@@ -19,12 +20,19 @@
    "fieldtype": "Table MultiSelect",
    "label": "table",
    "options": "normal"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "name1",
+   "fieldname": "section_break_zjwl",
+   "fieldtype": "Section Break",
+   "label": "helooooo"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-29 11:17:03.283390",
+ "modified": "2026-01-10 17:50:40.169298",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "table multi",

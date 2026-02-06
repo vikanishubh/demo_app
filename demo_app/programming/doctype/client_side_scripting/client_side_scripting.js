@@ -7,9 +7,7 @@
 // 	},
 // });
 frappe.ui.form.on("client side scripting",{
-    
 
-   
     // refresh:function (frm){
     //   frappe.throw("hello refresh")
     // }
@@ -31,8 +29,7 @@ frappe.ui.form.on("client side scripting",{
     // }
 
     // after_save:function(frm){
-    //     frappe.throw("hello after")
-    // }
+    //     frappe.throw("hello after save")}
 
     // before_submit:function(frm){
     //     frappe.throw("hello before submit")
@@ -49,9 +46,8 @@ frappe.ui.form.on("client side scripting",{
     // after_cancel:function(frm){
     //     frappe.throw("hello after")
     // }
-    
 
-     // enable:function(frm){
+    // enable:function(frm){
     //     frappe.msgprint("helloo enable")
     // }
 
@@ -90,6 +86,7 @@ frappe.ui.form.on("client side scripting",{
     //         relation:"father", 
     //         age:"77"
     //     })
+        
     // }
 
 
@@ -104,10 +101,10 @@ frappe.ui.form.on("client side scripting",{
     
 
     // refresh:function(frm){
-    //     // frm.add_custom_button("Click Button",()=>{
-    //     //     frappe.msgprint(__("you clicked the button"));
-    //     // })
-
+    //     frm.add_custom_button("Click Button",()=>{
+    //         frappe.msgprint(__("you clicked the button"));
+    //     })
+    
     //     frm.add_custom_button("click Button1",()=>{
     //         frappe.msgprint(__("you click1"))
     //     },'click me')
@@ -115,7 +112,6 @@ frappe.ui.form.on("client side scripting",{
     //         frappe.msgprint(__("you click2"))
     //     },'click me')
     // }
-
 
 })   
 

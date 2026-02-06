@@ -9,7 +9,10 @@
   "last_name",
   "full_name",
   "email",
-  "contact_no"
+  "contact_no",
+  "articles_borrowed_section",
+  "author",
+  "my_article"
  ],
  "fields": [
   {
@@ -39,12 +42,30 @@
    "fieldtype": "Data",
    "label": "Full Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "articles_borrowed_section",
+   "fieldtype": "Section Break",
+   "label": "Articles Borrowed"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "label": "Author",
+   "options": "Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "my_article",
+   "fieldtype": "Table",
+   "label": "My Article",
+   "options": "Article Details"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-05 18:13:48.889934",
+ "modified": "2026-01-07 10:27:03.737542",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Library Member",

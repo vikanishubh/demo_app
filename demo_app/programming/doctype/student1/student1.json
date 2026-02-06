@@ -31,7 +31,8 @@
   {
    "fieldname": "percentage",
    "fieldtype": "Float",
-   "label": "percentage"
+   "label": "percentage",
+   "read_only": 1
   },
   {
    "fieldname": "subject",
@@ -54,7 +55,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-31 17:47:07.806556",
+ "modified": "2026-01-10 16:55:31.909441",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Student1",

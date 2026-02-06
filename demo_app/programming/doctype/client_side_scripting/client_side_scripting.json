@@ -3,6 +3,7 @@
  "allow_rename": 1,
  "autoname": "PRE-.####",
  "creation": "2025-12-28 23:34:18.082658",
+ "description": "fgehrthryy",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -96,7 +97,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-30 10:52:11.137287",
+ "modified": "2026-01-09 13:12:03.494619",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "client side scripting",
@@ -120,5 +121,6 @@
  "rows_threshold_for_grid_search": 20,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "first_name"
 }

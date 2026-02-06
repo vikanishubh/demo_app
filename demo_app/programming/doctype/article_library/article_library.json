@@ -31,8 +31,9 @@
   },
   {
    "fieldname": "author",
-   "fieldtype": "Data",
-   "label": "Author"
+   "fieldtype": "Link",
+   "label": "Author",
+   "options": "Author"
   },
   {
    "fieldname": "description",
@@ -61,7 +62,7 @@
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-05 13:12:18.887653",
+ "modified": "2026-01-07 10:04:25.519456",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Article Library",
