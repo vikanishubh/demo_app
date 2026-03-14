@@ -1,34 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-12-29 11:21:50.225691",
+ "creation": "2026-02-25 15:29:26.425637",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "dd",
-  "select"
+  "name1",
+  "efve_section",
+  "age"
  ],
  "fields": [
   {
-   "fieldname": "dd",
-   "fieldtype": "Dynamic Link",
-   "label": "dd",
-   "options": "select"
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "name"
   },
   {
-   "fieldname": "select",
-   "fieldtype": "Select",
-   "label": "Select",
-   "options": "Practice\nPractice2"
+   "collapsible": 1,
+   "collapsible_depends_on": "name1",
+   "fieldname": "efve_section",
+   "fieldtype": "Section Break",
+   "label": "efve"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "age "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-19 14:58:19.890978",
+ "modified": "2026-03-09 10:54:27.828598",
  "modified_by": "Administrator",
  "module": "programming",
- "name": "limited link practice",
+ "name": "Collapse",
  "owner": "Administrator",
  "permissions": [
   {

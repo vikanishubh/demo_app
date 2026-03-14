@@ -1,44 +1,49 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-01-21 10:26:57.328140",
+ "creation": "2026-02-13 18:14:08.118182",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "first_name",
-  "iamge",
-  "amended_from"
+  "section_break_7ybd",
+  "amended_from",
+  "name1",
+  "tab_break_1ts8"
  ],
  "fields": [
   {
-   "fieldname": "iamge",
-   "fieldtype": "Attach",
-   "label": "iamge"
+   "fieldname": "section_break_7ybd",
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Demo",
+   "options": "roleeee",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
   },
   {
-   "fieldname": "first_name",
+   "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "name"
+   "label": "name "
+  },
+  {
+   "fieldname": "tab_break_1ts8",
+   "fieldtype": "Tab Break",
+   "show_dashboard": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-25 15:29:02.476588",
+ "modified": "2026-02-20 15:51:46.624170",
  "modified_by": "Administrator",
  "module": "programming",
- "name": "Demo",
+ "name": "roleeee",
  "owner": "Administrator",
  "permissions": [
   {
@@ -49,9 +54,8 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "roleeee",
    "share": 1,
-   "submit": 1,
    "write": 1
   }
  ],

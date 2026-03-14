@@ -16,7 +16,9 @@
   "city",
   "address",
   "dd",
-  "helloo"
+  "helloo",
+  "image",
+  "amended_from"
  ],
  "fields": [
   {
@@ -38,7 +40,8 @@
   {
    "fieldname": "age",
    "fieldtype": "Int",
-   "label": "age "
+   "label": "age ",
+   "non_negative": 1
   },
   {
    "fieldname": "dob",
@@ -90,9 +93,25 @@
    "fieldtype": "Autocomplete",
    "label": "helloo",
    "options": "shubh\nraj\nshiv\nniket"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Practice2",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [
   {
@@ -101,7 +120,7 @@
    "link_fieldname": "rating"
   }
  ],
- "modified": "2025-12-29 16:00:31.553892",
+ "modified": "2026-03-09 10:46:54.645398",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Practice2",

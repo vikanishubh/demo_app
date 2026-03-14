@@ -261,26 +261,16 @@ override_doctype_class = {
 	"Purchase Order":"demo_app.purchase_order.CustomPurchaseOrder"
 	
 }
-		
+
 ##task-3 week 7
 override_whitelisted_methods = {
     "erpnext.accounts.doctype.sales_invoice.sales_invoice.make_delivery_note":"demo_app.invoice.make_delivery_note"
 }
 
 
-
-
-
-
-
-
-
 # override_doctype_class = {
 #     "ToDo": "demo_app.todo.CustomToDo"
 # }
-
-
-
 
 
 # app_include_js = "/assets/demo_app/js/global.js"
@@ -399,8 +389,14 @@ on_logout = "demo_app.login.clear_user_cache"
 # 	"demo_app.auth.validate"
 # ]
 
-
-fixtures=["Practice2"]
+# fixtures=["Practice2"]
+# fixtures=[
+# 	{
+# 		"dt":"Workflow",
+# 		"filters":[["name","in",["Sales Order Approval"]]]
+# 	}
+# ]
+fixtures = ["Custom Field"]
 
 permission_query_conditions = {
     "Demo": "demo_app.permissions.demo_conditions"
@@ -432,21 +428,22 @@ doc_events = {
 		},
 
 		"Item": {
-        "before_insert": "demo_app.item.set_serial_batch_series",
+        # "before_insert": "demo_app.item.set_serial_batch_series",
 		
     },
 	###task-1 week 7
 	"Sales Order": {
 		"before_save": "demo_app.sale_order.before_save",
 			
- 		}
+ 		},
+
+	"Material Request": {
+        "on_submit": "demo_app.material_request.create_purchase_order"
 		
     }
+}
 
 
-# Overriding Methods
-# ------------------------------
-#
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "demo_app.event.get_events"
 # }

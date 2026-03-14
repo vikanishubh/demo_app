@@ -6,26 +6,39 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "age"
+  "age",
+  "amended_from"
  ],
  "fields": [
   {
    "allow_on_submit": 1,
    "fieldname": "name1",
    "fieldtype": "Data",
-   "label": "name"
+   "in_list_view": 1,
+   "label": "name",
+   "reqd": 1
   },
   {
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "age "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "submittable",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-12-29 14:37:08.191816",
+ "modified": "2026-02-19 12:24:25.574427",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "submittable",

@@ -1,0 +1,11 @@
+[
+  {
+    "doctype": "Custom Field",
+    "name": "Demo-city",
+    "dt": "Demo",
+    "fieldname": "city",
+    "label": "City",
+    "fieldtype": "Data",
+    "insert_after": "last_name"
+  }
+]

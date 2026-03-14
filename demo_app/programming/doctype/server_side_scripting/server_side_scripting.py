@@ -4,19 +4,19 @@
 import frappe
 from frappe.model.document import Document
 
-
+  
 class serversidescripting(Document):
-	pass
+	# pass
 
     # def autoname(self):
     #     self.name = f"{self.first_name} {self.last_name}"
 
-    # def on_change(self):
-    #     frappe.msgprint("Document changed")
+    def on_change(self):
+	    frappe.msgprint("Document changed")
 
 	# def before_insert(self):
 	#     frappe.msgprint("hello before insert")
-	
+
 	# def after_insert(self):  
 	# 	frappe.msgprint("hello after")
 
@@ -25,9 +25,9 @@ class serversidescripting(Document):
 
 	# def before_save(self):
 	# 	frappe.msgprint("before save")
-	
-	# def on_update(self):
-	# 	frappe.msgprint("on update")
+
+    def on_update(self):
+	    frappe.msgprint("on update")
 
 	# def before_submit(self):
 	# 	frappe.msgprint("before submit")
@@ -54,11 +54,11 @@ class serversidescripting(Document):
 	# 	for row in self.get('family_member'):
 	# 	    frappe.msgprint(frappe._("{0}.the family name is '{1}' and relation is {2} and age is {3}").format(row.idx,row.name1,row.relation,row.age))
 
- 
+
 ####frappe.get_doc()####
 	# def validate(self):
 	# 	self.get_document()
-	
+
 	# def get_document(self):
 	# 	doc=frappe.get_doc('client side scripting',self.client_side_doc)
 	# 	frappe.msgprint(frappe._("the first Name is '{0}' and age is '{1}'").format(doc.first_name,doc.age))
@@ -79,6 +79,7 @@ class serversidescripting(Document):
 	#     doc=frappe.get_cached_doc('client side scripting',self.client_side_doc)
 	#     frappe.msgprint(frappe._("the first Name is '{0}' and age is '{1}'").format(doc.first_name,doc.age))
 
+
 ##frappe.rename_doc()##
 	# def before_insert(self):
 	# 	frappe.rename_doc(
@@ -86,6 +87,18 @@ class serversidescripting(Document):
     #     "PRE-0063",
     #     "PRE-0065"
     # )
+
+###frappe.get_meta()
+	# def validate(self):
+	# 	meta = frappe.get_meta("Sales Order")
+	# 	x = meta.get_custom_fields()
+	# 	fieldnames = [f.fieldname for f in x]
+	# 	frappe.msgprint(str(fieldnames))
+
+	# def validate(self):
+	# 	for field in self.meta.fields:
+	# 		print(field.fieldname)
+
 ##frappe.new_doc()##
     # def validate(self):
 	# 	self.new_document()
@@ -126,8 +139,6 @@ class serversidescripting(Document):
     #     doc = frappe.get_doc("client side scripting", "PRE-0030")
     #     doc.delete(ignore_permissions=True)
 	
-
-
 ####doc.reload()####
 	# def validate(self):
 	# 	doc = frappe.get_doc("client side scripting", "PRE-0064")
@@ -187,7 +198,7 @@ class serversidescripting(Document):
     #         frappe._("The parent name is {0} and age is {1}")
     #         .format(d.first_name, d.age)
     #     )
-
+ 
 #####get_value#######
     # def validate(self):
 	#     self.get_value()

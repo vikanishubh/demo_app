@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-12-27 22:46:34.704175",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,7 +9,8 @@
   "id",
   "name1",
   "age",
-  "city"
+  "city",
+  "naming_series"
  ],
  "fields": [
   {
@@ -31,15 +33,22 @@
    "fieldname": "city",
    "fieldtype": "Data",
    "label": "City"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "hello",
+   "options": "YYYY\nMM"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-29 15:07:07.603744",
+ "modified": "2026-03-08 18:36:25.519480",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Doc Naming",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

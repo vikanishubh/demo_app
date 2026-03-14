@@ -3,8 +3,8 @@
 
 frappe.ui.form.on("Demo", {
 	validate(frm) {
-        frappe.msgprint("helllo how arfe you")
+        frappe.msgprint("helllo how are you")
         frappe.utils.play_sound("shubh")
-
+           
 	},
 });

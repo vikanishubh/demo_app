@@ -1,40 +1,46 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-12-29 17:15:48.477180",
+ "creation": "2026-02-13 14:56:14.168119",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "relation",
-  "age"
+  "item_name",
+  "sub_items",
+  "json_data",
+  "html"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "item_name",
    "fieldtype": "Data",
-   "label": "Name"
+   "label": "Item Name "
   },
   {
-   "fieldname": "relation",
-   "fieldtype": "Data",
-   "label": "Relation"
+   "fieldname": "sub_items",
+   "fieldtype": "Button",
+   "label": "Sub Items"
   },
   {
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "label": "Age"
+   "fieldname": "json_data",
+   "fieldtype": "JSON",
+   "label": "json data"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "html"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-19 14:43:51.168425",
+ "modified": "2026-02-16 13:57:14.846836",
  "modified_by": "Administrator",
  "module": "programming",
- "name": "Family Member",
+ "name": "Main Item",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

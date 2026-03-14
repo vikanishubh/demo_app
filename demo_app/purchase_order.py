@@ -5,4 +5,4 @@ class CustomPurchaseOrder(PurchaseOrder):
     def validate(self):
         super().validate()
         if not self.delivery_date:
-            frappe.throw("Expected Delivery Date is required.")
+            frappe.throw("Expected Delivery Date is required........")

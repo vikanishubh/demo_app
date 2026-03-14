@@ -1,34 +1,27 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-12-29 11:21:50.225691",
+ "creation": "2026-02-13 14:50:35.356657",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "dd",
-  "select"
+  "items"
  ],
  "fields": [
   {
-   "fieldname": "dd",
-   "fieldtype": "Dynamic Link",
-   "label": "dd",
-   "options": "select"
-  },
-  {
-   "fieldname": "select",
-   "fieldtype": "Select",
-   "label": "Select",
-   "options": "Practice\nPractice2"
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Main Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-19 14:58:19.890978",
+ "modified": "2026-02-16 11:04:40.783397",
  "modified_by": "Administrator",
  "module": "programming",
- "name": "limited link practice",
+ "name": "Main",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,6 +33,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

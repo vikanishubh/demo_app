@@ -15,7 +15,6 @@ frappe.ui.form.on("Student", {
                     gender: frm.doc.gender,
                     date_of_joining: frm.doc.enrollement_date
 
-
                 },
                 callback:function(r){
                     frappe.msgprint(__("employee created"))
@@ -27,6 +26,6 @@ frappe.ui.form.on("Student", {
 })
 // frappe.ui.form.on("Student", {
 // 	refresh(frm) {
-
+   
 // 	},
 // });

@@ -54,7 +54,7 @@ frappe.ui.form.on("client side scripting",{
     // family_member_on_form_rendered:function(frm){
     //     frappe.msgprint("hello family member")
     // }
- 
+
     // helloo:function(frm) {
     //     frappe.msgprint('Button field clicked!');
     // }
@@ -68,8 +68,8 @@ frappe.ui.form.on("client side scripting",{
     //         [row.idx,row.name1,row.relation]
     //     ))
     // }
-    // }
-     
+    // }      
+
     // refresh:function(frm){
     //     // frm.set_intro("now you can create new client")
 
@@ -79,17 +79,16 @@ frappe.ui.form.on("client side scripting",{
     // }
 
     // validate:function(frm){
-    //     // frm.set_value('full_name',frm.doc.first_name+" "+frm.doc.middle_name+" "+frm.doc.last_name)
+    //     frm.set_value('full_name',frm.doc.first_name+" "+frm.doc.middle_name+" "+frm.doc.last_name)
 
     //     let row=frm.add_child('family_member',{
     //         name1:"raj",
     //         relation:"father", 
     //         age:"77"
     //     })
-        
+
     // }
-
-
+ 
     // enable:function(frm){
     //     // frm.set_df_property("first_name",'reqd',1)
 
@@ -98,13 +97,12 @@ frappe.ui.form.on("client side scripting",{
     //     // frm.toggle_reqd('age',1)
     // }
 
-    
 
     // refresh:function(frm){
     //     frm.add_custom_button("Click Button",()=>{
     //         frappe.msgprint(__("you clicked the button"));
     //     })
-    
+ 
     //     frm.add_custom_button("click Button1",()=>{
     //         frappe.msgprint(__("you click1"))
     //     },'click me')
@@ -124,5 +122,9 @@ frappe.ui.form.on("client side scripting",{
 // //     frappe.throw("hello from 'age' heloooo!")
 // //     }
 // })
-
+// frappe.ui.form.on("Family Member", {
+//     relation: function(frm, cdt, cdn) {
+//         frappe.model.set_value(cdt, cdn, "age", 78);
+//     }
+// });
 
