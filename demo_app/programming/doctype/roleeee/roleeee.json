@@ -8,6 +8,7 @@
   "section_break_7ybd",
   "amended_from",
   "name1",
+  "age",
   "tab_break_1ts8"
  ],
  "fields": [
@@ -34,13 +35,20 @@
    "fieldname": "tab_break_1ts8",
    "fieldtype": "Tab Break",
    "show_dashboard": 1
+  },
+  {
+   "default": "18",
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "age",
+   "permlevel": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-02-20 15:51:46.624170",
+ "modified": "2026-03-18 11:06:23.560106",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "roleeee",

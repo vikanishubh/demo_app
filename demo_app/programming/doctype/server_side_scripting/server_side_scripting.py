@@ -40,7 +40,7 @@ class serversidescripting(Document):
 
 	# def on_trash(self):
 	# 	frappe.msgprint("on delete")
-	
+
 	# def after_delete(self):
 	# 	frappe.msgprint("after delete")
 	

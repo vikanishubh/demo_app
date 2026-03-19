@@ -126,6 +126,7 @@
    "label": "text editor"
   },
   {
+   "collapsible": 1,
    "fieldname": "attachments_section",
    "fieldtype": "Section Break",
    "label": "Attachments"
@@ -147,6 +148,7 @@
    "options": "attach_image"
   },
   {
+   "collapsible": 1,
    "fieldname": "other_section",
    "fieldtype": "Section Break",
    "label": "other"
@@ -244,7 +246,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-24 10:16:55.910533",
+ "modified": "2026-03-19 12:33:04.725541",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Practice",
