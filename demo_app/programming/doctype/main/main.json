@@ -5,7 +5,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "items"
+  "items",
+  "amended_from"
  ],
  "fields": [
   {
@@ -13,12 +14,22 @@
    "fieldtype": "Table",
    "label": "Items",
    "options": "Main Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Main",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-16 11:04:40.783397",
+ "modified": "2026-04-14 19:09:03.168852",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Main",
