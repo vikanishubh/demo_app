@@ -20,6 +20,7 @@
   {
    "fieldname": "sub_items",
    "fieldtype": "Button",
+   "in_list_view": 1,
    "label": "Sub Items"
   },
   {
@@ -37,7 +38,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-02-16 13:57:14.846836",
+ "modified": "2026-04-16 15:56:03.313946",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Main Item",

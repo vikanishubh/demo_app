@@ -17,7 +17,7 @@
   },
   {
    "collapsible": 1,
-   "collapsible_depends_on": "name1",
+   "collapsible_depends_on": "\"name1\"",
    "fieldname": "efve_section",
    "fieldtype": "Section Break",
    "label": "efve"
@@ -31,7 +31,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-19 12:27:36.325844",
+ "modified": "2026-04-06 12:27:23.417932",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Collapse",

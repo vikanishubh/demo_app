@@ -24,7 +24,8 @@
   {
    "fieldname": "id",
    "fieldtype": "Data",
-   "label": "id"
+   "label": "id",
+   "reqd": 1
   },
   {
    "description": "enter full name",
@@ -32,7 +33,6 @@
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "is_virtual": 1,
    "label": "name",
    "options": "f\"{doc.id} {doc.age}\"",
    "placeholder": "Enter customer name"
@@ -40,8 +40,7 @@
   {
    "fieldname": "age",
    "fieldtype": "Int",
-   "label": "age ",
-   "non_negative": 1
+   "label": "age "
   },
   {
    "fieldname": "dob",
@@ -61,6 +60,7 @@
    "options": "Sales Invoice"
   },
   {
+   "default": "vasu",
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "full name",
@@ -120,7 +120,7 @@
    "link_fieldname": "rating"
   }
  ],
- "modified": "2026-03-09 10:46:54.645398",
+ "modified": "2026-04-08 14:42:09.984717",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Practice2",

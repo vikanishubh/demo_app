@@ -367,7 +367,7 @@ homepage = "homepage1"
 # get_website_user_home_page = "demo_app.website.get_home_page"
 
 portal_sidebar_items = "demo_app.sidebar.get_sidebar_items"
-
+    
 ###task
 brand_html='<div class="navbar-brand"><img src="/assets/demo_app/images/logo.png" height="200" width="50">Demo App<div>'
 
@@ -419,7 +419,7 @@ doc_events = {
 	
 		"Student1": {
 			"validate": "demo_app.programming.doctype.student1.events.validate",
-			
+
 		},	
 		 "Customer": {
 		 

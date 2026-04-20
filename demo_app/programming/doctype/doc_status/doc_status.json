@@ -13,7 +13,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "\nDraft\nABBBBCCCC"
+   "options": "\nDraft\nABBBBCCCC\nsigzen"
   },
   {
    "fieldname": "name1",
@@ -24,7 +24,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-08 18:28:07.583587",
+ "modified": "2026-04-06 13:05:21.157368",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Doc Status",
@@ -59,6 +59,10 @@
   {
    "color": "Pink",
    "title": "ABBBBCCCC"
+  },
+  {
+   "color": "Orange",
+   "title": "Sigzen"
   }
  ]
 }

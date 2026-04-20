@@ -71,7 +71,7 @@ frappe.ui.form.on("client side scripting",{
     // }      
 
     // refresh:function(frm){
-    //     // frm.set_intro("now you can create new client")
+    //     frm.set_intro("now you can create new client")
 
     //     if(frm.is_new()){
     //         frm.set_intro("now you can create new client")
@@ -88,7 +88,7 @@ frappe.ui.form.on("client side scripting",{
     //     })
 
     // }
- 
+
     // enable:function(frm){
     //     // frm.set_df_property("first_name",'reqd',1)
 
@@ -97,12 +97,12 @@ frappe.ui.form.on("client side scripting",{
     //     // frm.toggle_reqd('age',1)
     // }
 
-
+    
     // refresh:function(frm){
     //     frm.add_custom_button("Click Button",()=>{
     //         frappe.msgprint(__("you clicked the button"));
     //     })
- 
+
     //     frm.add_custom_button("click Button1",()=>{
     //         frappe.msgprint(__("you click1"))
     //     },'click me')

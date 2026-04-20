@@ -4,15 +4,14 @@
 import frappe
 from frappe.model.document import Document
 
-  
 class serversidescripting(Document):
-	# pass
+	pass
 
     # def autoname(self):
     #     self.name = f"{self.first_name} {self.last_name}"
 
-    def on_change(self):
-	    frappe.msgprint("Document changed")
+    # def on_change(self):
+	#     frappe.msgprint("Document changed")
 
 	# def before_insert(self):
 	#     frappe.msgprint("hello before insert")
@@ -26,8 +25,8 @@ class serversidescripting(Document):
 	# def before_save(self):
 	# 	frappe.msgprint("before save")
 
-    def on_update(self):
-	    frappe.msgprint("on update")
+    # def on_update(self):
+	#     frappe.msgprint("on update")
 
 	# def before_submit(self):
 	# 	frappe.msgprint("before submit")
@@ -198,14 +197,14 @@ class serversidescripting(Document):
     #         frappe._("The parent name is {0} and age is {1}")
     #         .format(d.first_name, d.age)
     #     )
- 
+
 #####get_value#######
     # def validate(self):
 	#     self.get_value()
 
     # def get_value(self):
 	#     first_name,age=frappe.db.get_value('client side scripting','PRE-0053',['first_name','age'])
-	#     frappe.msgprint(frappe._("the parent first name is {0} and age is {1}").format(first_name,age))
+	#     frappe.msgprint(frappe._("the parent first name is {0} and age is {1}").format(first_name,age))  
 
 ###########set_value#######
 	# def validate(self):
