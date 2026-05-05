@@ -26,7 +26,7 @@ frappe.ui.form.on('Main Item', {
                         fieldname: 'sub_items_table',
                         fieldtype: 'Table',
                         label: 'Sub Items',
-                        in_place_edit: true,
+                        in_place_edit: false,
                         data: data,
                         fields: [
                             {
@@ -40,15 +40,22 @@ frappe.ui.form.on('Main Item', {
                                 fieldname: 'quantity',
                                 label: 'Quantity',
                                 in_list_view: 1
-                            }
+                            },
+                            {
+                                fieldtype: 'Int',
+                                fieldname: 'quantity',
+                                label: 'Quantity',
+                                in_list_view: 1
+                            },
                         ]
                     }
                 ],
                 primary_action_label: 'Save',
 
                 primary_action(values) {
-
-                    let updated_items = values.sub_items_table.map(item => {
+                   
+                    
+                    let updated_items = (values.sub_items_table || []).map(item => {
                         return {
                             ...item,
                             name: item.name && !item.name.startsWith("row")
@@ -63,6 +70,7 @@ frappe.ui.form.on('Main Item', {
                             doctype: frm.doc.doctype,
                             name: frm.doc.name,
                             row_name: row.name,
+                            row_idx: row.idx,
                             sub_items: JSON.stringify(updated_items)
                         },
                         callback: function(r) {
@@ -71,6 +79,7 @@ frappe.ui.form.on('Main Item', {
                             render_items_table(frm, row);
 
                             d.hide();
+                            frm.reload_doc();
                         }
                     });
                 }
@@ -80,11 +89,9 @@ frappe.ui.form.on('Main Item', {
         }
 
         if (frm.is_new() || frm.is_dirty()) {
-
-            frappe.dom.freeze("Saving document...");
-
+            
             frm.save().then(() => {
-                frappe.dom.unfreeze();
+                
                 open_dialog();
             });
 
@@ -181,9 +188,11 @@ function render_items_table(frm, row) {
                 doctype: frm.doc.doctype,
                 name: frm.doc.name,
                 row_name: row.name,
+                row_idx: row.idx,
                 sub_items: JSON.stringify(items)
             },
             callback: function () {
+                
 
                 row.json_data = JSON.stringify(items);
                 render_items_table(frm, row);
@@ -197,10 +206,9 @@ function render_items_table(frm, row) {
     });
 }
 
-
-// ========================
+  
 // DELETE
-// ========================
+
 function delete_subitem(frm, row, index) {
 
     let items = JSON.parse(row.json_data || "[]");
@@ -213,9 +221,11 @@ function delete_subitem(frm, row, index) {
             doctype: frm.doc.doctype,
             name: frm.doc.name,
             row_name: row.name,
+            row_idx: row.idx,
             sub_items: JSON.stringify(items)
         },
         callback: function(r) {
+            
 
             row.json_data = JSON.stringify(items);
             render_items_table(frm, row);

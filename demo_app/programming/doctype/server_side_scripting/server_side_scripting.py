@@ -51,7 +51,7 @@ class serversidescripting(Document):
 
     # def validate(self):
 	# 	for row in self.get('family_member'):
-	# 	    frappe.msgprint(frappe._("{0}.the family name is '{1}' and relation is {2} and age is {3}").format(row.idx,row.name1,row.relation,row.age))
+	# 	    frappe.msgprint(frappe._("{0}.the family name is '{1}' and relation is {2} and age is {3}").format(row.idx,row.name1,row.relation,row.age)) 
 
 
 ####frappe.get_doc()####
@@ -77,7 +77,7 @@ class serversidescripting(Document):
 	# 	    frappe.throw("Please select Client Side Scripting document")
 	#     doc=frappe.get_cached_doc('client side scripting',self.client_side_doc)
 	#     frappe.msgprint(frappe._("the first Name is '{0}' and age is '{1}'").format(doc.first_name,doc.age))
-
+ 
 
 ##frappe.rename_doc()##
 	# def before_insert(self):

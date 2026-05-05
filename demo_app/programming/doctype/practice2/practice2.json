@@ -24,8 +24,7 @@
   {
    "fieldname": "id",
    "fieldtype": "Data",
-   "label": "id",
-   "reqd": 1
+   "label": "id"
   },
   {
    "description": "enter full name",
@@ -120,7 +119,7 @@
    "link_fieldname": "rating"
   }
  ],
- "modified": "2026-04-08 14:42:09.984717",
+ "modified": "2026-04-21 16:11:49.927672",
  "modified_by": "Administrator",
  "module": "programming",
  "name": "Practice2",

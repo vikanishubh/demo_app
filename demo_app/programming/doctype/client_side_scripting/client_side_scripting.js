@@ -3,7 +3,7 @@
 
 // frappe.ui.form.on("client side scripting", {
 // 	refresh(frm) {
-
+  
 // 	},
 // });
 frappe.ui.form.on("client side scripting",{
@@ -69,7 +69,7 @@ frappe.ui.form.on("client side scripting",{
     //     ))
     // }
     // }      
-
+   
     // refresh:function(frm){
     //     frm.set_intro("now you can create new client")
 
@@ -123,6 +123,7 @@ frappe.ui.form.on("client side scripting",{
 // //     frappe.throw("hello from 'age' heloooo!")
 // //     }
 // })
+
 // frappe.ui.form.on("Family Member", {
 //     relation: function(frm, cdt, cdn) {
 //         frappe.model.set_value(cdt, cdn, "age", 78);

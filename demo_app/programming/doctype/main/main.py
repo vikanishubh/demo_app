@@ -6,14 +6,13 @@ class Main(Document):
 
 
 @frappe.whitelist()
-def update_sub_items(doctype, name, row_name, sub_items):
-
+def update_sub_items(doctype, name, row_name, sub_items,row_idx):
     doc = frappe.get_doc(doctype, name)
     for row in doc.items:
-        if row.name == row_name:
+        if row.idx == int(row_idx):
             row.json_data = sub_items
             break
-
+    
     doc.save(ignore_permissions=True)
 
     return "Done"

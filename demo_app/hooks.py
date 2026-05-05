@@ -428,6 +428,7 @@ doc_events = {
 		},
 
 		"Item": {
+			"validate": "demo_app.item_custom.capitalize_item_name"
         # "before_insert": "demo_app.item.set_serial_batch_series",
 		
     },
@@ -440,6 +441,9 @@ doc_events = {
 	"Material Request": {
         "on_submit": "demo_app.material_request.create_purchase_order"
 		
+    },
+	"ToDo": {
+        "after_insert": "demo_app.notifications.notify_todo_creation"
     }
 }
 
@@ -458,7 +462,7 @@ additional_timeline_content = {
     "ToDo": ["demo_app.timeline.todo_timeline"]
 }
 
-# notification_config = "demo_app.notifications.get_notification_config"
+notification_config = "demo_app.notifications.get_notification_config"
 
 
 
@@ -467,4 +471,7 @@ doctype_list_js = {
     "Student": "public/js/student_list.js",
     "Customer": "public/js/student_list.js"
 }
+doctype_js={
+	"Contact":"task.js"
+	}
 

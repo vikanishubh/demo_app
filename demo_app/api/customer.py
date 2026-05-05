@@ -1,6 +1,6 @@
 import frappe
 
-@frappe.whitelist(allow_guest=False)
+@frappe.whitelist(allow_guest=True)
 def get_customers_groupwise():
     data = frappe.local.form_dict
 
